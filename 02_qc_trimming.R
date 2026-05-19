@@ -1,0 +1,5 @@
+library(fastqcr)
+dir.create("qc_report", showWarnings = FALSE)
+dir.create("trimmed", showWarnings = FALSE)
+fastqc(fq.dir = "raw_fastq", out.dir = "qc_report")
+cat("QC完成\n")
